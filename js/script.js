@@ -33,3 +33,16 @@ function changer(selector) {
   selector.classList.toggle("fas");
   selector.classList.toggle("fa-eye-slash");
 }
+function checkPassword(e) {
+  password1 = e.password1.value;
+  password2 = e.password2.value; //Here password 2 is name of second password input
+  if (password1 == "") {
+    alert("Enter the password");
+  } else if (password2 == "") {
+    alert("Enter confirm password");
+  } else if (password2 != password1) {
+    alert("Password do not match");
+  } else {
+    alert("Fuck you");
+  }
+}

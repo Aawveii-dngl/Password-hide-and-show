@@ -13,14 +13,14 @@
     <script src="./js/script.js"></script>
   </head>
   <body>
-    <form>
+    <form onSubmit="return checkPassword(this)">
       <div class="total-contents">
         <h1>Secure the password</h1>
         <div class="password">
           <input
             type="password"
             id="pwd1"
-            name="pwd"
+            name="password1"
             placeholder="Enter password"
           />
           <div class="font1" onclick="iconChanged()">
@@ -31,7 +31,7 @@
           <input
             type="password"
             id="pwd2"
-            name="pwd"
+            name="password2"
             placeholder="Retype password"
           />
           <div class="font2" onclick="iconChanged2()">
